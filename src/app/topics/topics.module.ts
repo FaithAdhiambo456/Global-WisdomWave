@@ -16,7 +16,10 @@ import { FavourComponent } from './favour/favour.component';
 import { EscatologyComponent } from './escatology/escatology.component';
 import { SexualPurityComponent } from './sexual-purity/sexual-purity.component';
 
-
+//Material imports
+import { MatButtonModule } from '@angular/material/button';
+import { MatCardModule } from '@angular/material/card';
+import { MatIconModule } from '@angular/material/icon';
 @NgModule({
   declarations: [
     PrayerComponent,
@@ -35,7 +38,12 @@ import { SexualPurityComponent } from './sexual-purity/sexual-purity.component';
   ],
   imports: [
     CommonModule,
-    TopicsRoutingModule
+    TopicsRoutingModule,
+
+    //Material modules
+    MatButtonModule,
+    MatCardModule,
+    MatIconModule
   ]
 })
 export class TopicsModule { }

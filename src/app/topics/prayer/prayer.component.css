@@ -1,0 +1,40 @@
+.card-container {
+    display: flex;
+    justify-content: space-around; /* Adjust space between cards */
+    flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
+    margin: 20px;
+}
+
+.card {
+    max-width: 300px;
+    height: 400px; /* Set fixed height */
+    margin: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    overflow: hidden; /* Hide overflow content */
+    display: flex;
+    flex-direction: column;
+}
+
+.mat-card-avatar {
+    background-size: cover;
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+}
+
+.mat-card-content {
+    flex: 1; /* Make content area flexible */
+    overflow: hidden; /* Hide overflow content */
+}
+
+.mat-card-actions {
+    display: flex;
+    align-items: center;
+}
+
+.flex-spacer {
+    flex: 1;
+}

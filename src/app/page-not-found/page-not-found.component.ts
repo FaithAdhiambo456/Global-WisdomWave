@@ -10,6 +10,6 @@ export class PageNotFoundComponent {
   constructor(private router: Router) {} // Initialize router in the constructor
 
   goBack() {
-    this.router.navigate(['/home']);
+    this.router.navigate(['/topics']);
   }
 }
