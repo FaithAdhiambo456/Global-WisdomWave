@@ -6,6 +6,8 @@ import { SigninComponent } from './customers/signin/signin.component';
 import { HomeComponent } from './dashboard/home/home.component';
 import { LoginComponent } from './authentication/login/login.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './dashboard/about/about.component';
 
 const routes: Routes = [
    {
@@ -44,6 +46,8 @@ const routes: Routes = [
         (m) => m.AuthenticationModule
       ),
   },
+  {path: 'footer', component: FooterComponent},
+  {path: 'About', component: AboutComponent},
 
   { path: "**", component:  PageNotFoundComponent},
 ];
